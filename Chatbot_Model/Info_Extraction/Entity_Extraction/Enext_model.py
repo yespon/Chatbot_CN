@@ -7,39 +7,37 @@
 """
 import os, time, sys
 import tensorflow as tf
+
+from utils import get_logger
 from tensorflow.contrib.rnn import LSTMCell
 from tensorflow.contrib.crf import crf_log_likelihood
 from tensorflow.contrib.crf import viterbi_decode
-from Entity_Extraction.data import pad_sequences, batch_yield
-from Entity_Extraction.utils import get_logger
-from Entity_Extraction.eval import conlleval
-
-# 解决与win10系统不兼容的row_write返回无效长度问题。
-import win_unicode_console
-win_unicode_console.enable()
+from data import pad_sequences, batch_yield, tag2label
+from eval import conlleval
 
 
 class BiLSTM_CRF(object):
-    def __init__(self, args, embeddings, tag2label, vocab, paths, config):
-        self.batch_size = args.batch_size
-        self.epoch_num = args.epoch
-        self.hidden_dim = args.hidden_dim
-        self.embeddings = embeddings
-        self.CRF = args.CRF
-        self.update_embedding = args.update_embedding
-        self.dropout_keep_prob = args.dropout
-        self.optimizer = args.optimizer
-        self.lr = args.lr
-        self.clip_grad = args.clip
+    def __init__(self, config):
+        self.batch_size = config['batch_size']
+        self.epoch_num = config['num_epochs']
+        self.hidden_dim = config['hidden_dim']
+        # self.embeddings = embeddings
+        self.CRF = config['CRF']
+        self.update_embedding = config['update_embedding']
+        self.dropout_keep_prob = config['dropout']
+        self.optimizer = config['optimizer']
+        self.lr = config['learning_rate']
+        self.clip_grad = config['clip']
         self.tag2label = tag2label
         self.num_tags = len(tag2label)
-        self.vocab = vocab
-        self.shuffle = args.shuffle
-        self.model_path = paths['model_path']
-        self.summary_path = paths['summary_path']
-        self.logger = get_logger(paths['log_path'])
-        self.result_path = paths['result_path']
-        self.config = config
+        self.word2id = config['word2id']
+        # self.vocab = vocab
+        self.shuffle = config['shuffle']
+        # self.model_path = paths['model_path']
+        # self.summary_path = paths['summary_path']
+        # self.logger = get_logger(paths['log_path'])
+        # self.result_path = paths['result_path']
+        # self.config = config
 
     def build_graph(self):
         self.add_placeholders()
@@ -164,11 +162,19 @@ class BiLSTM_CRF(object):
         saver = tf.train.Saver(tf.global_variables())
 
         with tf.Session(config=self.config) as sess:
+            # saver = sess.run(tf.global_variables_initializer())
+
+            timestamp = str(int(time.time()))
+            outdir = os.path.abspath(os.path.join(os.path.curdir, 'runs', timestamp))
             sess.run(self.init_op)
             self.add_summary(sess)
 
             for epoch in range(self.epoch_num):
                 self.run_one_epoch(sess, train, dev, self.tag2label, epoch, saver)
+
+            # builder = tf.saved_model.builder.SavedModelBuilder(outdir)
+            # builder.add_meta_graph_and_variables(sess, ['ner_string'])
+            # builder.save()
 
     def test(self, test):
         saver = tf.train.Saver()
@@ -320,4 +326,3 @@ class BiLSTM_CRF(object):
         metric_path = os.path.join(self.result_path, 'result_metric_' + epoch_num)
         for _ in conlleval(model_predict, label_path, metric_path):
             self.logger.info(_)
-
