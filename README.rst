@@ -9,9 +9,21 @@ Chatbot_CN是一个基于第三代对话系统的朵轮对话机器人项目，�
 
     2、Chatbot_KG
 
-    3、QQ群；
+    3、Chatbot_S2S
 
-    4、外部平台：如电商平台、网页端等
+    4、Chatbot_Utils
+
+    5、Chatbot_RASA
+
+    6、Chatbot_Help
+
+    7、Chatbot_Retrieval
+
+    8、Chatbot_Doc
+
+    9、Chatbot_DM
+
+    10、Chatbot_NLU
 
 
 二、各模块详细介绍
@@ -28,10 +40,15 @@ Chatbot_CN是一个基于第三代对话系统的朵轮对话机器人项目，�
 
 1、
 
-四、Update News
+四、项目演示
 ======================
 
-    * 2020.1.7  接入钉钉群，支持主动推送消息、outgoing交互
+
+
+五、Update News
+======================
+
+    * 
 
 
 
