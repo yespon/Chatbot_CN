@@ -25,6 +25,8 @@
 
     10、Chatbot_NLU
 
+    11、Chatbot_Evaluate
+
 
 二、各模块详细介绍
 ============
