@@ -13,7 +13,7 @@
 
     4、Chatbot_Utils      以前的CHatbot_Model模块，这个项目是基本的算法模块，实现了基本算法模型，如细粒度NER等等
 
-    5、Chatbot_RASA       以开源框架RASA开发的一套任务型对话系统
+    5、Chatbot_RASA       以开源框架RASA开发的一套任务型对话系统，该项目仅仅使用RASA
 
     6、Chatbot_Help       一个将机器人接入第三方平台的工具、如钉钉群、微信公众号等
 
@@ -29,11 +29,7 @@
 
 
 二、各模块详细介绍
-============
-
-::
-
-    pip install Chatbot_Help
+======================
 
 
 
