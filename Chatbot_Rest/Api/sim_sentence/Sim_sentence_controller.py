@@ -16,6 +16,7 @@
 import json
 import datetime
 import logging
+import os
 
 from django.http import JsonResponse
 from Chatbot_Model.Question_Pairs_Matching.infer_predict import Infer
@@ -23,6 +24,8 @@ from Chatbot_Model.Question_Pairs_Matching.infer_predict import Infer
 
 logger = logging.getLogger(__name__)
 
+
+os.environ["CUDA_VISIBLE_DIVICES"] = "3"
 infer = Infer()
 
 def sim_sentence_controller(request):

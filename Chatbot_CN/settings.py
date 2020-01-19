@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Chatbot_CN.apps.RegisterLoginConfig',
     'bootstrap4',
+    'corsheaders',
     #'rest_framework_swagger',
     #'rest_framework',
    # 'rest_framework_docs',
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'Chatbot_CN.urls'
@@ -86,9 +89,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'chatbot_cn',
-        'USER': 'root',
-        'PASSWORD': 'Aa123456',
-        'HOST': 'localhost',
+        'USER': 'user_rw',
+        'PASSWORD': 'mysqlreadwrite',
+        'HOST': '172.18.103.43',
         'PORT': '3306',
     }
 }
@@ -124,7 +127,41 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'  # zh-hans
+# 跨域增加忽略
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_WHITELIST = (
+#     'http://172.18.103.43:5005/webhooks/rest/webhook'
+# )
+
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+    'VIEW',
+)
+
+CORS_ALLOW_HEADERS = (
+    'XMLHttpRequest',
+    'X_FILENAME',
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'Pragma',
+)
+
+
+
+LANGUAGE_CODE = 'zh-hans'  # zh-hans
 
 TIME_ZONE = 'Asia/Shanghai'
 

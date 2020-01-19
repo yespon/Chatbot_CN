@@ -11,10 +11,12 @@ import logging
 import datetime
 
 from django.http import JsonResponse
-# from Chatbot_Model.Info_Extraction.Entity_Extraction.Info_Ext_main import NER_predict
+from Chatbot_Model.Entity_extraction.NER_main import NER
 from Chatbot_Rest.Api.util import LogUtils2
 
 logger = logging.getLogger(__name__)
+
+ner = NER()
 
 def entity_ext_controller(request):
     '''
@@ -27,8 +29,8 @@ def entity_ext_controller(request):
         try:
             msg = jsonData["msg"]
 
-            # res = NER_predict(msg)
-            res = ''
+            # res = ner.evaluate_line(msg)
+            res = ner.interface(msg)
             localtime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             dic = {
                 "desc": "Success",
@@ -41,6 +43,7 @@ def entity_ext_controller(request):
             return JsonResponse(dic)
         except Exception as e:
             logger.info(e)
+            print(e)
     else:
         return JsonResponse({"desc": "Bad request"}, status=400)
 

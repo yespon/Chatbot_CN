@@ -13279,28 +13279,28 @@ wysihtml5.views.View = Base.extend(
       this._isCompatible    = wysihtml5.browser.supported();
 
       if (this.editableElement.nodeName.toLowerCase() != "textarea") {
-          this.config.contentEditableMode = true;
-          this.config.noTextarea = true;
+          this.bert_config.contentEditableMode = true;
+          this.bert_config.noTextarea = true;
       }
-      if (!this.config.noTextarea) {
-          this.textarea         = new wysihtml5.views.Textarea(this, this.editableElement, this.config);
+      if (!this.bert_config.noTextarea) {
+          this.textarea         = new wysihtml5.views.Textarea(this, this.editableElement, this.bert_config);
           this.currentView      = this.textarea;
       }
 
       // Sort out unsupported/unwanted browsers here
-      if (!this._isCompatible || (!this.config.supportTouchDevices && wysihtml5.browser.isTouchDevice())) {
+      if (!this._isCompatible || (!this.bert_config.supportTouchDevices && wysihtml5.browser.isTouchDevice())) {
         var that = this;
         setTimeout(function() { that.fire("beforeload").fire("load"); }, 0);
         return;
       }
 
       // Add class name to body, to indicate that the editor is supported
-      wysihtml5.dom.addClass(document.body, this.config.bodyClassName);
+      wysihtml5.dom.addClass(document.body, this.bert_config.bodyClassName);
 
-      this.composer = new wysihtml5.views.Composer(this, this.editableElement, this.config);
+      this.composer = new wysihtml5.views.Composer(this, this.editableElement, this.bert_config);
       this.currentView = this.composer;
 
-      if (typeof(this.config.parser) === "function") {
+      if (typeof(this.bert_config.parser) === "function") {
         this._initParser();
       }
 
@@ -13308,11 +13308,11 @@ wysihtml5.views.View = Base.extend(
     },
 
     handleBeforeLoad: function() {
-        if (!this.config.noTextarea) {
+        if (!this.bert_config.noTextarea) {
             this.synchronizer = new wysihtml5.views.Synchronizer(this, this.textarea, this.composer);
         }
-        if (this.config.toolbar) {
-          this.toolbar = new wysihtml5.toolbar.Toolbar(this, this.config.toolbar, this.config.showToolbarAfterInit);
+        if (this.bert_config.toolbar) {
+          this.toolbar = new wysihtml5.toolbar.Toolbar(this, this.bert_config.toolbar, this.bert_config.showToolbarAfterInit);
         }
     },
 
@@ -13374,12 +13374,12 @@ wysihtml5.views.View = Base.extend(
     },
 
     parse: function(htmlOrElement, clearInternals) {
-      var parseContext = (this.config.contentEditableMode) ? document : ((this.composer) ? this.composer.sandbox.getDocument() : null);
-      var returnValue = this.config.parser(htmlOrElement, {
-        "rules": this.config.parserRules,
-        "cleanUp": this.config.cleanUp,
+      var parseContext = (this.bert_config.contentEditableMode) ? document : ((this.composer) ? this.composer.sandbox.getDocument() : null);
+      var returnValue = this.bert_config.parser(htmlOrElement, {
+        "rules": this.bert_config.parserRules,
+        "cleanUp": this.bert_config.cleanUp,
         "context": parseContext,
-        "uneditableClass": this.config.uneditableContainerClassname,
+        "uneditableClass": this.bert_config.uneditableContainerClassname,
         "clearInternals" : clearInternals
       });
       if (typeof(htmlOrElement) === "object") {
@@ -13422,8 +13422,8 @@ wysihtml5.views.View = Base.extend(
     _cleanAndPaste: function (oldHtml) {
       var cleanHtml = wysihtml5.quirks.cleanPastedHTML(oldHtml, {
         "referenceNode": this.composer.element,
-        "rules": this.config.pasteParserRulesets || [{"set": this.config.parserRules}],
-        "uneditableClass": this.config.uneditableContainerClassname
+        "rules": this.bert_config.pasteParserRulesets || [{"set": this.bert_config.parserRules}],
+        "uneditableClass": this.bert_config.uneditableContainerClassname
       });
       this.composer.selection.deleteContents();
       this.composer.selection.insertHTML(cleanHtml);

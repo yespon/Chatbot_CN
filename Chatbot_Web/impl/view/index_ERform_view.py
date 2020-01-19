@@ -6,7 +6,6 @@
 @time: 2018/08/08
 """
 from django.shortcuts import render
-from django.views.decorators import csrf
  
 import sys
 sys.path.append("..")

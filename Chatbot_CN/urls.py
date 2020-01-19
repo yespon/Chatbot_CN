@@ -38,7 +38,7 @@ from Chatbot_KG.kbqa import question_answering         # 这个在KG大模块下
 
 from Chatbot_Web.impl.view import chatbot_view         # 对话
 from Chatbot_Web.impl.view import intent_detection_view  # 意图识别
-from Chatbot_Web.impl.dialogue import intent_detection   # 意图识别数据交互方法
+# from Chatbot_Web.impl.dialogue import intent_detection   # 意图识别数据交互方法
 
 from Chatbot_Web.impl.view import wx_view     # 接入微信视图跳转
 
@@ -76,7 +76,7 @@ urlpatterns = [
     # 人机对话模块
     # path('dialogue/', chatbot_view.dialogue_page, name='dialogue'),  # 人机对话页面
     path('intent_detect/', intent_detection_view.intent_view, name='intent_detect'),   # 意图识别
-    path('intent_post/', intent_detection.intent_post, name='intent_post'),             # 意图识别数据交互
+    # path('intent_post/', intent_detection.intent_post, name='intent_post'),             # 意图识别数据交互
 
 
 

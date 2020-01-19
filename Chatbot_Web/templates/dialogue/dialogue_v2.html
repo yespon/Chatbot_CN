@@ -42,32 +42,34 @@
 
     $('#Reply').click(function () {
 
-        var msg = msgText.val()
+        var msg = msgText.val();
         {#var urls = 'http://172.18.99.170:8009/api/v1/chat'#}
-        urls = 'http://localhost:5005/webhooks/rest/webhook'
-        if (msg == '') {
-            toastr.error("Message can not be empty")
+        var urls = 'http://172.18.103.43:5005/webhooks/rest/webhook';
+        if (msg == null) {
+            toastr.error("Message can not be empty");
             return;
         }
 
         var data = {
-            "msg": msg
-        }
+            "message": msg,
+            "sender": "00022"
+        };
         $.ajax({
             url: urls,
             data: JSON.stringify(data),
             method: 'POST',
+            xhrFields: {withCredentials:'true'},
             success: function (res) {
                 drawMessage(res)
             },
             error: function (err) {
                 if (err.desc == null)
-                    err.desc = "Something went wrong"
+                    err.desc = "Something went wrong";
                 toastr.error(err.desc)
             }
         })
 
-    })
+    });
 
 
     var msgContent = $('#MessageContent');
