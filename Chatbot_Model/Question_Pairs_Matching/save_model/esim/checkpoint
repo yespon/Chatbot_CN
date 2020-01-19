@@ -1,2 +1,0 @@
-model_checkpoint_path: "/home/xsq/nlp_code/Chatbot_CN/Chatbot_Model/Question_Pairs_Matching/save_model/esim/model.ckpt"
-all_model_checkpoint_paths: "/home/xsq/nlp_code/Chatbot_CN/Chatbot_Model/Question_Pairs_Matching/save_model/esim/model.ckpt"
