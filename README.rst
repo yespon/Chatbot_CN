@@ -29,7 +29,7 @@
 
     12、Chatbot_Web_       界面显示，演示
 
-    13、Chatbot_Recommendation   对话系统与推荐系统结合，目前正在规划中、暂未开始
+    13、Chatbot_Recommendation_   对话系统与推荐系统结合，目前正在规划中、暂未开始
 
 
 二、各模块详细介绍
@@ -52,7 +52,7 @@
 
 
 
-五、Update News
+六、Update News
 ======================
 
     *  2019.10    添加 **Chatbot_RASA** 子项目
@@ -67,12 +67,12 @@
 
 
 
-五、参考
+七、参考
 ======================
 1、
 
 
-六、最后
+八、最后
 ======================
 
     1、目前这个工程比较完备了，但是很多细节需要完善，也正在积极开发维护，如果你有什么新的idea，欢迎联系我： **997562867**
@@ -92,5 +92,6 @@
 .. _Chatbot_NLU: https://github.com/charlesXu86/Chatbot_NLU
 .. _Chatbot_Evaluate: https://github.com/charlesXu86/Chatbot_Evaluate
 .. _Chatbot_Web: https://github.com/charlesXu86/Chatbot_Web
+.. _Chatbot_Recommendation: https://github.com/charlesXu86/Chatbot_Recommendation
 
 .. _聊天机器人开发实战: https://jq.qq.com/?_wv=1027&k=5r43CmE
