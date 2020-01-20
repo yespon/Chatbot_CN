@@ -27,7 +27,7 @@
 
     11、Chatbot_Evaluate_  对话质量评估、评价、对话数据回流模块
 
-    12、Chatbot_Web        界面显示，演示
+    12、Chatbot_Web_        界面显示，演示
 
     13、Chatbot_Recommendation   对话系统与推荐系统结合，目前正在规划中、暂未开始
 
@@ -85,3 +85,4 @@
 .. _Chatbot_DM: https://github.com/charlesXu86/Chatbot_DM
 .. _Chatbot_NLU: https://github.com/charlesXu86/Chatbot_NLU
 .. _Chatbot_Evaluate: https://github.com/charlesXu86/Chatbot_Evaluate
+.. _Chatbot_Web: https://github.com/charlesXu86/Chatbot_Web
