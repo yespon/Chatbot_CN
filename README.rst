@@ -27,6 +27,10 @@
 
     11、Chatbot_Evaluate_  对话质量评估、评价、对话数据回流模块
 
+    12、Chatbot_Web        界面显示，演示
+
+    13、Chatbot_Recommendation   对话系统与推荐系统结合，目前正在规划中、暂未开始
+
 
 二、各模块详细介绍
 ======================
@@ -51,6 +55,9 @@
 五、Update News
 ======================
 
+    *  2019.10    添加 **Chatbot_RASA** 子项目
+    *  2019.10    添加 **Chatbot_NLU** 子项目
+    *  2019.10    添加 **Chatbot_DM** 子项目
     *  2019.11.19 添加 **Chatbot_Retrieval** 子项目
     *  2020.1.20  移除项目里的Chatbot_Web模块，添加 **Chatbot_Web** 子项目，从2020.1.20日开始， ** Chatbot_CN ** 不再做工程项目使用，只是该项目的说明
 
