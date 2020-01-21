@@ -1,3 +1,3 @@
 # Chatbot_CN 说明文档
 
-> An awesome project.
+> 这是一个中文说明文档
