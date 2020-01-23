@@ -7,23 +7,17 @@
     <img src="https://img.shields.io/github/stars/charlesXu86/Chatbot_CN.svg?colorA=orange&colorB=orange&logo=github"
          alt="GitHub stars">
   </a>
-  <a href="https://bert-as-service.readthedocs.io/">
-      <img src="https://readthedocs.org/projects/bert-as-service/badge/?version=latest"
+  <a href="https://www.chatbotcn.top/">
+      <img src="https://www.chatbotcn.top/"
            alt="ReadTheDoc">
     </a>
-  <a href="https://pypi.org/search/?q=bert-serving">
-      <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/bert-serving-server">
-  </a>
   <a href="https://img.shields.io/github/issues/charlesXu86/Chatbot_CN">
         <img src="https://img.shields.io/github/issues/hanxiao/bert-as-service.svg"
              alt="GitHub issues">
   </a>
-  <a href="https://github.com/hanxiao/bert-as-service/blob/master/LICENSE">
+  <a href="https://github.com/charlesXu86/Chatbot_CN/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/charlesXu86/Chatbot_CN.svg"
              alt="GitHub license">
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fhanxiao%2Fbert-as-service">
-  <img src="https://img.shields.io/twitter/url/https/github.com/hanxiao/bert-as-service.svg?style=social" alt="Twitter">
   </a>      
 </p>
 
