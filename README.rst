@@ -109,5 +109,5 @@ Chatbot_* 系列的详细说明文档请点击以下链接：
 .. |Python Versions| image:: https://img.shields.io/pypi/pyversions/time-convert.svg
 .. |Downloads| image:: https://img.shields.io/pypi/dm/time-convert.svg
 
-.. |Issues| image:
+.. |Issues| image:: https://img.shields.io/pypi/dm/time-convert.svg
      :target: https://img.shields.io/github/issues/charlesXu86/Chatbot_CN
