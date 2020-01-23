@@ -3,6 +3,10 @@
 
 |Coverage Status| |Python Versions| |Downloads|
 
+Chatbot_* 系列文档请参考
+
+            www.chatbotcn.top
+
 **Chatbot_CN** 是一个基于第三代对话系统的多轮对话机器人项目，旨在于开发一个结合规则系统、深度学习、强化学习、知识图谱、多轮对话策略管理的
 聊天机器人，目前随着时间的慢慢发展，从最初的一个 **Chatbot_CN** 项目，发展成了一个 **Chatbot_*** 的多个项目，所以最近在重构中，将这个项目拆分成
 了很多个小的项目，下面做一一介绍：
