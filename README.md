@@ -3,14 +3,10 @@
 <p align="center">Using BERT model as a sentence encoding service, i.e. mapping a variable-length sentence to a fixed-length vector.</p>
 
 <p align="center">
-  <a href="https://github.com/hanxiao/bert-as-service/stargazers">
-    <img src="https://img.shields.io/github/stars/hanxiao/bert-as-service.svg?colorA=orange&colorB=orange&logo=github"
+  <a href="https://github.com/charlesXu86/Chatbot_CN/stargazers">
+    <img src="https://img.shields.io/github/stars/charlesXu86/Chatbot_CN.svg?colorA=orange&colorB=orange&logo=github"
          alt="GitHub stars">
   </a>
-  <a href="https://pypi.org/search/?q=bert-serving">
-      <img src="https://img.shields.io/pypi/v/bert-serving-server.svg?colorB=brightgreen"
-           alt="Pypi package">
-    </a>
   <a href="https://bert-as-service.readthedocs.io/">
       <img src="https://readthedocs.org/projects/bert-as-service/badge/?version=latest"
            alt="ReadTheDoc">
@@ -18,12 +14,12 @@
   <a href="https://pypi.org/search/?q=bert-serving">
       <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/bert-serving-server">
   </a>
-  <a href="https://github.com/hanxiao/bert-as-service/issues">
+  <a href="https://img.shields.io/github/issues/charlesXu86/Chatbot_CN">
         <img src="https://img.shields.io/github/issues/hanxiao/bert-as-service.svg"
              alt="GitHub issues">
   </a>
   <a href="https://github.com/hanxiao/bert-as-service/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/hanxiao/bert-as-service.svg"
+        <img src="https://img.shields.io/github/license/charlesXu86/Chatbot_CN.svg"
              alt="GitHub license">
   </a>
   <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fhanxiao%2Fbert-as-service">
@@ -48,7 +44,7 @@
     <img src=".github/demo.gif?raw=true" width="700">
 </p>
 
-<h6 align="center">Made by Han Xiao • :globe_with_meridians: <a href="https://hanxiao.github.io">https://hanxiao.github.io</a></h6>
+<h6 align="center">Made by Xu • :globe_with_meridians: <a href="https://charlesXu86.github.io">https://charlesXu86.github.io</a></h6>
 
 
 <h2 align="center">What is it</h2>
