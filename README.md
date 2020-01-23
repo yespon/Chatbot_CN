@@ -38,7 +38,7 @@
     <img src=".github/demo.gif?raw=true" width="700">
 </p>
 
-<h6 align="center">Made by Xu • :globe_with_meridians: <a href="https://charlesXu86.github.io">https://charlesXu86.github.io</a></h6>
+<h6 align="center">Made by Xu • :globe_with_meridians: <a href="https://www.chatbotcn.top">https://www.chatbotcn.top</a></h6>
 
 
 <h2 align="center">What is it</h2>
