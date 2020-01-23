@@ -1,6 +1,8 @@
 一、Chatbot_CN (www.chatbotcn.com)
 =========================================
 
+|Coverage Status| |Version Status| |Python Versions| |Downloads|
+
 **Chatbot_CN** 是一个基于第三代对话系统的多轮对话机器人项目，旨在于开发一个结合规则系统、深度学习、强化学习、知识图谱、多轮对话策略管理的
 聊天机器人，目前随着时间的慢慢发展，从最初的一个 **Chatbot_CN** 项目，发展成了一个 **Chatbot_*** 的多个项目，所以最近在重构中，将这个项目拆分成
 了很多个小的项目，下面做一一介绍：
@@ -62,7 +64,7 @@
     *  2019.12    添加 **Chatbot_Utils** 子项目
     *  2019.12    添加 **Chatbot_Help** 子项目
     *  2020.1     移除项目里的Chatbot_Web模块，添加 **Chatbot_Web** 子项目，从2020.1.20日开始， **Chatbot_CN** 不再做工程项目使用，只是该项目的说明
-
+    *  2020.1     将机器人接入钉钉群，实现用户交互
 
 
 
@@ -79,6 +81,7 @@
 
     2、如果你也是一个NLPER，或者对对话系统的开发感兴趣，欢迎加入群聊 【聊天机器人开发实战_】，一起讨论技术： 群号 **718607564**
 
+    3、
 
 .. _Chatbot_CN: https://github.com/charlesXu86/Chatbot_CN
 .. _Chatbot_KG: https://github.com/charlesXu86/Chatbot_KG
@@ -95,3 +98,11 @@
 .. _Chatbot_Recommendation: https://github.com/charlesXu86/Chatbot_Recommendation
 
 .. _聊天机器人开发实战: https://jq.qq.com/?_wv=1027&k=5r43CmE
+
+
+.. |Coverage Status| image:: https://coveralls.io/repos/github/charlesXu86/Time_Convert/badge.svg
+    :target: https://coveralls.io/github/charlesXu86/Time_Convert
+.. |Version Status| image:: https://badge.fury.io/py/time-convert.svg
+   :target: https://badge.fury.io/py/time-convert
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/time-convert.svg
+.. |Downloads| image:: https://img.shields.io/pypi/dm/time-convert.svg
