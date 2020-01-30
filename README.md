@@ -37,7 +37,7 @@
 </p>
 
 <p align="center">
-    <img src="image/chatbot.jpg?raw=true" width="700">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/chatbot.jpg?raw=true" width="700">
 </p>
 
 <h6 align="center">Made by Xu • :globe_with_meridians: <a href="https://www.chatbotcn.com">https://www.chatbotcn.com</a></h6>
