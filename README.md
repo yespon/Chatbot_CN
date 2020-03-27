@@ -1,6 +1,6 @@
 <h1 align="center">Chatbot_CN</h1>
 
-<p align="center">基于深度学习、强化学习、开源RASA对话引擎的多场景对话机器人</p>
+<p align="center">基于深度学习、强化学习、对话引擎的多场景对话机器人</p>
 
 <p align="center">
   <a href="https://github.com/charlesXu86/Chatbot_CN/stargazers">
@@ -109,13 +109,13 @@
 
 <h2 align="center">Update News</h2>
 
-    *  2019.10    添加 **Chatbot_RASA** 子项目
-    *  2019.10    添加 **Chatbot_NLU** 子项目
-    *  2019.10    添加 **Chatbot_DM** 子项目
-    *  2019.11    添加 **Chatbot_Retrieval** 子项目
-    *  2019.12    添加 **Chatbot_Utils** 子项目
-    *  2019.12    添加 **Chatbot_Help** 子项目
-    *  2020.1     移除项目里的Chatbot_Web模块，添加 **Chatbot_Web** 子项目，从2020.1.20日开始， **Chatbot_CN** 不再做工程项目使用，只是该项目的说明
+    *  2019.10    添加 Chatbot_RASA 子项目
+    *  2019.10    添加 Chatbot_NLU 子项目
+    *  2019.10    添加 Chatbot_DM 子项目
+    *  2019.11    添加 Chatbot_Retrieval 子项目
+    *  2019.12    添加 Chatbot_Utils 子项目
+    *  2019.12    添加 Chatbot_Help 子项目
+    *  2020.1     移除项目里的Chatbot_Web模块，添加 Chatbot_Web 子项目，从2020.1.20日开始， Chatbot_CN 不再做工程项目使用，只是该项目的说明
     *  2020.1     将机器人接入钉钉群，实现用户交互
 
 <h2 align="center">FAQ</h2>
