@@ -67,6 +67,9 @@
 
 #### 1. **Chatbot_CN**整体架构
 
+<p align="center">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatot_CN01.jpg?raw=true" width="300 height=350">
+</p>
 
 #### 2. 各子模块介绍
 
