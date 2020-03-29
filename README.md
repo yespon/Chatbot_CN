@@ -56,7 +56,7 @@
                                                 
     3、能力层：自然语言理解、对话管理、对话策略、策略优化、对话工厂
     
-    4、应用层：钉钉群机器人、第三方机器人等
+    4、应用层：网页端、钉钉群机器人、微信公众号、第三方平台（如拼多多）等
     
 具体的项目结构请参考项目结构和各模块详细说明。
 
@@ -77,13 +77,14 @@
 
 
 <table>
-<tr><td><a href="https://github.com/charlesXu86/Chatbot_CN">Chatbot_CN</a></td><td>总体项目介绍，包含文档</td></tr>
-<tr><td><a href="https://github.com/charlesXu86/Chatbot_KG">Chatbot_KG</a></td><td>知识图谱模块、关系网络等</td></tr>
+<tr><td><a href="https://github.com/charlesXu86/Chatbot_CN">Chatbot_CN</a></td><td>总体项目介绍，包含文档（这里不包含代码）</td></tr>
+<tr><td><a href="https://github.com/charlesXu86/Chatbot_KG">Chatbot_KG</a></td><td>知识图谱模块、关系网络、实体连接、知识推理等</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_S2S">Chatbot_S2S</a></td><td>训练端到端的对话模型，目前这个模块只为了项目的完整，作用不大，不过这个是一个研究方向</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Utils">Chatbot_Utils</a></td><td>机器人的基本算法组件，比如query纠错、实体识别等，他是机器人的基础</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_RASA">Chatbot_RASA</a></td><td>机器人的核心对话引擎，基于RASA开源框架</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_DM">Chatbot_DM</a></td><td>对话管理模块，包含对话策略，策略优化等，引入强化学习</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_NLU">Chatbot_NLU</a></td><td>自然语言理解模块（基于RASA），包含意图识别、slot提取、情感分类</td></tr>
+<tr><td><a href="https://github.com/charlesXu86/Chatbot_Skills">Chatbot_Skills</a></td><td>对话技能管理，实现对话场景的快速配置、管理、切换</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Doc">Chatbot_Doc</a></td><td>NLP和对话系统的一些文献、收集的文章等等</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Data">Chatbot_Data</a></td><td>机器人的一些语料收集</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Retrieval">Chatbot_Retrieval</a></td><td>基于检索的对话模型，他在机器人无法处理用户意图时发挥重要作用</td></tr>
@@ -120,6 +121,7 @@
     *  2019.12    添加 Chatbot_Help 子项目
     *  2020.1     移除项目里的Chatbot_Web模块，添加 Chatbot_Web 子项目，从2020.1.20日开始， Chatbot_CN 不再做工程项目使用，只是该项目的说明
     *  2020.1     将机器人接入钉钉群，实现用户交互
+    *  2020.3     添加对话技能管理模块
 
 <h2 align="center">FAQ</h2>
 
