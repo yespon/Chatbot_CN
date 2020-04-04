@@ -87,6 +87,7 @@
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Skills">Chatbot_Skills</a></td><td>对话技能管理，实现对话场景的快速配置、管理、切换</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Doc">Chatbot_Doc</a></td><td>NLP和对话系统的一些文献、收集的文章等等</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Data">Chatbot_Data</a></td><td>机器人的一些语料收集</td></tr>
+<tr><td><a href="https://github.com/charlesXu86/Chatbot_Crawler">Chatbot_Crawler</a></td><td>爬虫</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Retrieval">Chatbot_Retrieval</a></td><td>基于检索的对话模型，他在机器人无法处理用户意图时发挥重要作用</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Evaluate_">Chatbot_Evaluate</a></td><td>对话质量评估、评价、对话诊断、数据回流模块，对话模型优化</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Help">Chatbot_Help</a></td><td>一个将机器人接入第三方平台的工具、如钉钉群、微信公众号等，可快速实现工程化</td></tr>
@@ -122,6 +123,7 @@
     *  2020.1     移除项目里的Chatbot_Web模块，添加 Chatbot_Web 子项目，从2020.1.20日开始， Chatbot_CN 不再做工程项目使用，只是该项目的说明
     *  2020.1     将机器人接入钉钉群，实现用户交互
     *  2020.3     添加对话技能管理模块
+    *  2020.4     添加爬虫模块（基于scrapy框架）
 
 <h2 align="center">FAQ</h2>
 
