@@ -93,7 +93,7 @@
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Help">Chatbot_Help</a></td><td>一个将机器人接入第三方平台的工具、如钉钉群、微信公众号等，可快速实现工程化</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Recommendation">Chatbot_Recommendation</a></td><td>对话系统与推荐系统结合，目前正在规划中、暂未开始</td></tr>
 <tr><td><a href="https://github.com/charlesXu86/Chatbot_Web">Chatbot_Web</a></td><td>机器人的简单pc端页面交互，可以实现快速体验机器人效果</td></tr>
-
+<tr><td><a href="https://github.com/charlesXu86/Chatbot_Voice">Chatbot_Voice</a></td><td>聊天机器人的语音交互模块</td></tr>
 </table>
 
 如果想了解更多详细的细节说明，请参考以下网站(详细文档)：
@@ -124,6 +124,7 @@
     *  2020.1     将机器人接入钉钉群，实现用户交互
     *  2020.3     添加对话技能管理模块
     *  2020.4     添加爬虫模块（基于scrapy框架）
+    *  2020.5     添加语音助手模块 Chatbot_Voice
 
 <h2 align="center">FAQ</h2>
 
