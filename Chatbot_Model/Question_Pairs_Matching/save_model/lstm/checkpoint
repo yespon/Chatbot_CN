@@ -1,2 +1,0 @@
-model_checkpoint_path: "/home/pengming/PycharmProjects/text_matching/save_model/lstm/model.ckpt"
-all_model_checkpoint_paths: "/home/pengming/PycharmProjects/text_matching/save_model/lstm/model.ckpt"
