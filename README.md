@@ -60,6 +60,12 @@
     
     5、硬件接入：可接入作为智能语音助手，目前已经加入语音助手模块，可接入树莓派、单片机等硬件
     
+项目的大致流程如下图：
+
+<p align="center">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN00.png?raw=true" width="600 height=600">
+</p>
+
 具体的项目结构请参考项目结构和各模块详细说明。
 
 
