@@ -63,13 +63,18 @@
 项目的大致流程如下图：
 
 <p align="center">
-    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN00.png?raw=true" width="600 height=600">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN00.png?raw=true" width="600 height=250">
 </p>
 
-具体的项目结构请参考项目结构和各模块详细说明。
+注：
+    
+    1、图中的虚线部分为文本机器人部分
+    
+    2、具体的项目结构请参考项目结构和各模块详细说明。
+    
+    3、**Chatbot_CN** 系列项目还存在不少细节问题，正在慢慢完善中。
 
 
-**Chatbot_CN** 系列项目还存在不少细节问题，正在慢慢完善中。
 
 <h2 align="center">项目结构</h2>
 
@@ -112,7 +117,18 @@
 
 <h2 align="center">各模块介绍</h2>
 
-#### **Chatbot_Utils**
+##### **Chatbot_Utils**
+
+&ensp; &ensp; 该模块为基本算法组件，其中包括的功能有：
+
+    1、文本纠错，可以纠正用户query的错别字等，同时还可以纠正部分由于ASR和OCR识别出的错误，用到的主要技术为：字音字形特征提取、微调bert mlm
+    
+    2、实体识别，可以识别出用户query中提及的实体信息，如：人名、机构名、快递公司、时间、地址等等
+    
+    3、句法分析，基于转移的句法分析
+    
+    4、指代消解。
+
 
 <h2 align="center">使用说明</h2>
 
