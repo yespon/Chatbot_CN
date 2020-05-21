@@ -81,7 +81,7 @@
 #### 1. **Chatbot_CN**整体架构
 
 <p align="center">
-    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN01.png?raw=true" width="600 height=600">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN00.png?raw=true" width="600 height=600">
 </p>
 
 #### 2. 各子模块介绍
@@ -169,7 +169,11 @@
 
 #### Start
 
-在启动服务之前，你需要比较熟悉整个项目的架构，
+在启动服务之前，你需要比较熟悉整个项目的架构，项目的各模块依赖关系如下图：
+
+<p align="center">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN01.png?raw=true" width="600 height=600">
+</p>
 
 <h2 align="center">Update News</h2>
 
