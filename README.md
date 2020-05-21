@@ -129,7 +129,7 @@
 
 <h2 align="center">各模块介绍</h2>
 
-##### **Chatbot_Utils**
+##### **1、Chatbot_Utils**
 
 &ensp; &ensp; 该模块为基本算法组件，同时也提供了restful API接口，其中包括的功能有：
 
@@ -144,7 +144,7 @@
     5、其他功能后续继续更新
     
 
-##### **Chatbot_Retrieval**
+##### **2、Chatbot_Retrieval**
 
 &ensp; &ensp; 检索式单论对话问答（FAQ），主要用到的技术为词权重、倒排索引、bert finetune。实现原理为Q-Q相似度匹配。该模块主要可以解决两类问题：
 
@@ -153,14 +153,14 @@
     2、在多轮对话过程中，意图未匹配情况下检索出最佳答案
     
 
-##### **Chatbot_Skills**
+##### **3、Chatbot_Skills**
 
 &ensp; &ensp; 任务型多轮对话的技能管理模块，当我们的机器人"学习"到了多种技能的时候，在对话的过程中可能会出现技能的交叉，即在任务A还没完成的时候跳转到任务B。
 
 **Chatbot_Skills**旨在完成多种任务的平滑切换和机器人的技能初始化配置。
 
 
-##### **Chatbot_Recommendation**
+##### **4、Chatbot_Recommendation**
 
 &ensp; &ensp; 将推荐系统和任务型对话结合
 
