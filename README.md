@@ -195,9 +195,9 @@
 
     2、如果你也是一个NLPER，或者对对话系统的开发感兴趣，欢迎加入群聊 聊天机器人开发实战，一起讨论技术： 群号： 718607564
 
-    3、
+    3、欢迎关注知乎专栏 <a href="https://zhuanlan.zhihu.com/c_1064543852391641088">聊天机器人开发实战</a>
 
 <h2 align="center">参考</h2>
     
     1、RASA demo
-    2、
+    2、bert as service
