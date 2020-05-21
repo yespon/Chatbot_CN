@@ -115,8 +115,16 @@
 
 <h2 align="center">项目演示</h2>
 
-<p align="center">
-    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示1.png?raw=true" width="80 height=140">
+<p align="left">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示1.png?raw=true" width="160 height=340">
+</p>
+
+<p align="left">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示2.png?raw=true" width="160 height=340">
+</p>
+
+<p align="left">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示3.png?raw=true" width="160 height=340">
 </p>
 
 <h2 align="center">各模块介绍</h2>
