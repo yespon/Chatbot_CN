@@ -115,6 +115,10 @@
 
 <h2 align="center">项目演示</h2>
 
+<p align="center">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示1.png?raw=true" width="80 height=140">
+</p>
+
 <h2 align="center">各模块介绍</h2>
 
 ##### **Chatbot_Utils**
@@ -146,6 +150,11 @@
 &ensp; &ensp; 任务型多轮对话的技能管理模块，当我们的机器人"学习"到了多种技能的时候，在对话的过程中可能会出现技能的交叉，即在任务A还没完成的时候跳转到任务B。
 
 **Chatbot_Skills**旨在完成多种任务的平滑切换和机器人的技能初始化配置。
+
+
+##### **Chatbot_Recommendation**
+
+&ensp; &ensp; 将推荐系统和任务型对话结合
 
 
 <h2 align="center">使用说明</h2>
