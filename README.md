@@ -45,10 +45,10 @@
 
 <h2 align="center">项目说明</h2>
 
-**Chatbot_CN** 是一个基于第三代对话系统的多轮对话机器人项目，旨在于开发一个结合规则系统、深度学习、强化学习、知识图谱、多轮对话策略管理的 聊天机器人，目前随着时间的慢慢发展，从最初的一个 Chatbot_CN 项目，发展成了一个 Chatbot_* 的多个项目。目前已经包含了在多轮任务型对话的场景中，基于话术（Story）、知识图谱（K-G）、端到端对话（E2E）。目的是为了实现一个可以快速切换场景、对话灵活的任务型机器人。
+&ensp; &ensp; **Chatbot_CN** 是一个基于第三代对话系统的多轮对话机器人项目，旨在于开发一个结合规则系统、深度学习、强化学习、知识图谱、多轮对话策略管理的 聊天机器人，目前随着时间的慢慢发展，从最初的一个 Chatbot_CN 项目，发展成了一个 Chatbot_* 的多个项目。目前已经包含了在多轮任务型对话的场景中，基于话术（Story）、知识图谱（K-G）、端到端对话（E2E）。目的是为了实现一个可以快速切换场景、对话灵活的任务型机器人。
 同时，**Chatbot_CN** 不仅仅是一个对话系统，而是一套针对客服场景下的完整人工智能解决方案。对话是解决方案的核心和最重要一环，但不仅限于对话，还包括智能决策，智能调度，智能预测，智能推荐等
 
-目前**Chatbot_CN** 已经拆分成了13个子项目，涵盖了对话数据收集处理、基本算法模型、对话引擎、对话质量评估，第三方平台快速接入、数据回流、模型优化等等。主要可以分为：
+&ensp; &ensp; 目前**Chatbot_CN** 已经拆分成了13个子项目，涵盖了对话数据收集处理、基本算法模型、对话引擎、对话质量评估，第三方平台快速接入、数据回流、模型优化等等。主要可以分为：
 
     1、数据层：对话业务数据，开源多轮对话数据等
     
@@ -56,19 +56,32 @@
                                                 
     3、能力层：自然语言理解、对话管理、对话策略、策略优化、对话工厂
     
-    4、应用层：网页端、钉钉群机器人、微信公众号、第三方平台（如拼多多）等
+    4、应用层：网页端、钉钉群机器人、微信公众号、第三方平台（如拼夕夕）等
     
-具体的项目结构请参考项目结构和各模块详细说明。
+    5、硬件接入：可接入作为智能语音助手，目前已经加入语音助手模块，可接入树莓派、单片机等硬件
+    
+项目的大致流程如下图：
+
+<p align="center">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN00.png?raw=true" width="600 height=250">
+</p>
+
+注：
+    
+    1、图中的虚线部分为文本机器人部分
+    
+    2、具体的项目结构请参考项目结构和各模块详细说明。
+    
+    3、Chatbot_CN 系列项目还存在不少细节问题，正在慢慢完善中。
 
 
-**Chatbot_CN** 系列项目还存在不少细节问题，正在慢慢完善中。
 
 <h2 align="center">项目结构</h2>
 
 #### 1. **Chatbot_CN**整体架构
 
 <p align="center">
-    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN01.jpg?raw=true" width="600 height=600">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/架构.png?raw=true" width="600 height=600">
 </p>
 
 #### 2. 各子模块介绍
@@ -102,15 +115,65 @@
 
 <h2 align="center">项目演示</h2>
 
+<p align="left">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示1.png?raw=true" width="160 height=340">
+</p>
+
+<p align="left">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示2.png?raw=true" width="160 height=340">
+</p>
+
+<p align="left">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/演示3.png?raw=true" width="160 height=340">
+</p>
+
 <h2 align="center">各模块介绍</h2>
 
-#### **Chatbot_Utils**
+##### **1、Chatbot_Utils**
+
+&ensp; &ensp; 该模块为基本算法组件，同时也提供了restful API接口，其中包括的功能有：
+
+    1、文本纠错，可以纠正用户query的错别字等，同时还可以纠正部分由于ASR和OCR识别出的错误，用到的主要技术为：字音字形特征提取、微调bert mlm
+    
+    2、实体识别，可以识别出用户query中提及的实体信息，如：人名、机构名、快递公司、时间、地址等等
+    
+    3、句法分析，基于转移的句法分析
+    
+    4、指代消解。
+    
+    5、其他功能后续继续更新
+    
+
+##### **2、Chatbot_Retrieval**
+
+&ensp; &ensp; 检索式单论对话问答（FAQ），主要用到的技术为词权重、倒排索引、bert finetune。实现原理为Q-Q相似度匹配。该模块主要可以解决两类问题：
+
+    1、FAQ
+    
+    2、在多轮对话过程中，意图未匹配情况下检索出最佳答案
+    
+
+##### **3、Chatbot_Skills**
+
+&ensp; &ensp; 任务型多轮对话的技能管理模块，当我们的机器人"学习"到了多种技能的时候，在对话的过程中可能会出现技能的交叉，即在任务A还没完成的时候跳转到任务B。
+
+**Chatbot_Skills**旨在完成多种任务的平滑切换和机器人的技能初始化配置。
+
+
+##### **4、Chatbot_Recommendation**
+
+&ensp; &ensp; 将推荐系统和任务型对话结合
+
 
 <h2 align="center">使用说明</h2>
 
 #### Start
 
-在启动服务之前，你需要比较熟悉整个项目的架构，
+在启动服务之前，你需要比较熟悉整个项目的架构，项目的各模块依赖关系如下图：
+
+<p align="center">
+    <img src="https://github.com/charlesXu86/Chatbot_CN/blob/master/image/Chatbot_CN01.png?raw=true" width="600 height=600">
+</p>
 
 <h2 align="center">Update News</h2>
 
@@ -125,6 +188,7 @@
     *  2020.3     添加对话技能管理模块
     *  2020.4     添加爬虫模块（基于scrapy框架）
     *  2020.5     添加语音助手模块 Chatbot_Voice
+    *  2020.5     在对话模型中加入 【AutoDL + 模型压缩 + MLflow】技术
 
 <h2 align="center">FAQ</h2>
 
@@ -132,9 +196,10 @@
 
     2、如果你也是一个NLPER，或者对对话系统的开发感兴趣，欢迎加入群聊 聊天机器人开发实战，一起讨论技术： 群号： 718607564
 
-    3、
+    3、欢迎关注知乎专栏`聊天机器人开发实战`
+    
 
 <h2 align="center">参考</h2>
     
     1、RASA demo
-    2、
+    2、bert as service
